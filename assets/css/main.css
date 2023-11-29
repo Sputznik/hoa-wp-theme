@@ -1,0 +1,9 @@
+/* SINGLE POST */
+.single-template-3 article.post .entry-summary,
+.single-template-3 .post-meta {
+  margin-bottom: 20px;
+}
+
+.coauthors-link a {
+  text-transform: capitalize;
+}
