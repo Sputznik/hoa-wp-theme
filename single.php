@@ -14,7 +14,7 @@ get_header();
           <div class='post-meta'><?php echo do_shortcode("[hoa_author_posts_link]"); ?> | <?php the_time( 'M j, Y' );?></div>
           <div class="post-thumbnail"><?php _e( do_shortcode( '[orbit_thumbnail size="full"]' ) );?></div>
           <div class="entry-content"><?php the_content(); ?></div>
-          <?php get_template_part( 'partials/author-box');?>
+          <?php get_template_part( 'partials/post/post-author-box');?>
           <?php get_template_part( 'partials/comments-box');?>
           <?php get_template_part( 'partials/post-navigation');?>
         </article>
