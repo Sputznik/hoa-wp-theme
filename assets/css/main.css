@@ -11,3 +11,68 @@
 .coauthors-link a {
   text-transform: capitalize;
 }
+
+/* PHOTO ESSAY HEADER */
+.photo-essay-header {
+  margin-bottom: 30px;
+  background-color: #000000;
+}
+
+.photo-essay-header .featured-img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-color: #eeeeee;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.photo-essay-header .featured-img::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.photo-essay-header .featured-img-overlay {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.photo-essay-header .header-content {
+  color: #ffffff;
+  text-align: center;
+}
+
+.photo-essay-header .post-title::after {
+  content: "";
+  width: 100%;
+  max-width: 80%;
+  display: block;
+  margin: 35px auto;
+  border: 1px solid #ffffff;
+}
+
+/* -------------------------- MEDIA QUERIES ------------------------- */
+@media(min-width: 768px){
+  .photo-essay-header .featured-img::before {
+    padding-top: 50.25%;
+  }
+
+  .photo-essay-header .header-content {
+    color: #ffffff;
+    padding: 0 45px;
+    text-align: center;
+  }
+
+  .photo-essay-header .post-title {
+    font-size: 52px;
+  }
+
+}
